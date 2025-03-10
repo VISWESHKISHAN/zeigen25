@@ -1,0 +1,77 @@
+.direction-container {
+    background-color: #605D5D;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    height: calc(100vh - 100px);
+    box-sizing: border-box;
+    position: relative; /* Needed for absolute positioning */
+  }
+  
+  /* Left Side Text */
+  .direction-text {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 50px;
+    line-height: 1;
+  }
+  
+  .direction-title {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  
+  .direction-location {
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  /* Right Side Map */
+  .direction-map {
+    width: 512px;
+    height: 512px;
+    object-fit: contain;
+    margin-right: 50px;
+  }
+  
+  .direction-rectangle {
+    width: 300px;
+    height: 80px;
+    background-color: #DF2DEF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Add hover effect */
+  .direction-rectangle:hover {
+    background-color: #c12ad6;
+  }
+  
+  
+  /* Text and Arrow Styling */
+  .rectangle-text {
+    margin-right: 10px;
+  }
+  
+  .rectangle-arrow {
+    font-size: 32px;
+  }
+  

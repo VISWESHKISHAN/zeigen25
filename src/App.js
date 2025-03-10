@@ -5,6 +5,8 @@ import Title from "./components/Home";
 import About from "./components/About";
 import Events from "./components/Events";
 import EventLineup from "./components/EventLineup";
+import Direction from "./components/Direction";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <About />
       <Events />
       <EventLineup />
+      <Direction />
     </div>
   );
 }
