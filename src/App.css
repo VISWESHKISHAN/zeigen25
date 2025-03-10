@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body {
+  background-color: #09031a;
+  color: #ffffff; /* Ensures text is visible */
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

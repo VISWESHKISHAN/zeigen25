@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Reem+Kufi+Fun:wght@700&display=swap');
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content horizontally */
+  gap: 25px; /* Medium gap between image and text */
+  margin-top: 120px; /* Medium gap below navbar */
+  width: 100vw; /* Full width of viewport */
+}
+
+.title-image {
+  width: 321px; /* Adjust size */
+  height: 314px;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left (next to the image) */
+  line-height: 80px; /* Reduces gap between upper and lower text */
+}
+
+.title-upper {
+  font-size: 85px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: left; /* Align text to the left */
+  margin-bottom: -10px; /* Removes extra gap between texts */
+}
+
+.title-lower {
+  font-size: 85px;
+  font-family: "Reem Kufi Fun", sans-serif;
+  text-align: left;
+}
+
+.zeigen-text {
+  color: #DF2DEF;
+  font-weight: 800;
+}
+
+.year-text {
+  color: white;
+  font-weight: 600; /* Semi-bold */
+}

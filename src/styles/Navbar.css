@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.navbar {
+  background-color: #232323; /* Dark gray background */
+  color: #DF2DEF; /* Pinkish-purple text */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-size: 18px; /* Slightly bigger text */
+  font-weight: bold; /* Make it stand out */
+  letter-spacing: 1px; /* Adds spacing for a clean look */
+  border-radius: 30px; /* Extra curved corners */
+  padding: 15px 50px; /* Increased horizontal padding */
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* More spacing between links */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Floating shadow */
+  
+  /* Floating Effect */
+  position: fixed;
+  top: 20px; /* Adjust vertical position */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: fit-content;
+  min-width: 650px; /* Increased width */
+  max-width: 85%; /* Keep some margin on sides */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #DF2DEF;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  color: white; /* Changes text color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Make it Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    min-width: auto;
+  }
+}
