@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Reem+Kufi+Fun:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Reem+Kufi+Fun:wght@700&family=Jersey+25&display=swap');
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+/* Title Section */
 .title-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers content horizontally */
-  gap: 25px; /* Medium gap between image and text */
-  margin-top: 120px; /* Medium gap below navbar */
-  width: 100vw; /* Full width of viewport */
+  justify-content: center;
+  gap: 25px;
+  margin-top: 120px;
+  width: 100vw;
 }
 
 .title-image {
-  width: 321px; /* Adjust size */
+  width: 321px;
   height: 314px;
   object-fit: contain;
   border-radius: 50px;
@@ -19,8 +28,8 @@
 .title-text {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align text to the left (next to the image) */
-  line-height: 80px; /* Reduces gap between upper and lower text */
+  align-items: flex-start;
+  line-height: 80px;
 }
 
 .title-upper {
@@ -28,8 +37,8 @@
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: white;
-  text-align: left; /* Align text to the left */
-  margin-bottom: -10px; /* Removes extra gap between texts */
+  text-align: left;
+  margin-bottom: -10px;
 }
 
 .title-lower {
@@ -45,5 +54,26 @@
 
 .year-text {
   color: white;
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600;
+}
+
+/* Department Text */
+.department-text {
+  font-size: 55px;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  margin-top: 20px; /* Space between title and department text */
+}
+
+/* Dim Image */
+.department-image-container {
+  margin-top: 40px; /* Vertical gap between text and image */
+}
+
+.department-image {
+  width: 221px;
+  height: 307px;
+  object-fit: contain;
 }

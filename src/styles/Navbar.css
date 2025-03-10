@@ -13,7 +13,7 @@
   justify-content: center;
   gap: 40px; /* More spacing between links */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Floating shadow */
-  
+  z-index: 1000;
   /* Floating Effect */
   position: fixed;
   top: 20px; /* Adjust vertical position */

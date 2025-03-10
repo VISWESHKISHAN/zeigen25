@@ -6,7 +6,7 @@
   }
   
   .events-title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   
@@ -14,14 +14,14 @@
     font-size: 3rem;
     font-weight: bold;
     color: #c12ef8;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
   
   .category-switch {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 40px;
+    margin-bottom: 40px;
   }
   
   .category-button {
@@ -29,7 +29,7 @@
     color: white;
     border: 2px solid #c12ef8;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     border-radius: 20px;
     transition: 0.3s;
@@ -68,20 +68,25 @@
     object-fit: cover;
   }
   
-  .event-name {
-    font-size: 1rem;
+  .event-name-card {
+    font-size: 1.5rem;
     padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  flex-grow: 1;  /* Allow it to take available space */
+  text-align: center;
   }
   
   .highlighted-event {
     position: relative;
-    margin-top: 30px;
+    margin-top: 100px;
     text-align: left;
   }
   
   .highlighted-image {
     width: 100%;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
   }
   
@@ -95,7 +100,7 @@
   }
   
   .highlighted-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
   }

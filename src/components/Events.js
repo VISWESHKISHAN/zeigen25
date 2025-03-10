@@ -49,7 +49,7 @@ const Events = () => {
         {(category === "Technical" ? technicalEvents : nonTechnicalEvents).map((event, index) => (
           <div key={index} className="event-card">
             <img src={event.image} alt={event.name} className="event-image" />
-            <p className="event-name">{event.name}</p>
+            <p className="event-name-card">{event.name}</p>
           </div>
         ))}
       </div>

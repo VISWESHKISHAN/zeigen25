@@ -11,14 +11,14 @@
 }
 
 .agenda-text {
-  font-size: 70px;
+  font-size: 3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #FFFFFF;
 }
 
 .event-text {
-  font-size: 120px;
+  font-size: 3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 800; /* Extra bold */
   color: #DF2DEF;
@@ -26,7 +26,7 @@
 }
 
 .date-text {
-  font-size: 70px;
+  font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #FFFFFF;
@@ -34,8 +34,8 @@
 
 /* Event Box - Main Rectangle */
 .event-box {
-  width: 1257px;
-  height: 228px;
+  width: 1170px;
+  height: 70px;
   border-radius: 70px;
   background-color: #1B1818;
   border: 5px solid #DF2DEF;
@@ -49,8 +49,8 @@
 
 /* Event Icon (Left Side) */
 .event-icon {
-  width: 180px;
-  height: 180px;
+  width: 70px;
+  height: 70px;
   background-color: #232323;
   border-radius: 90px;
   background-size: cover;
@@ -61,12 +61,13 @@
 
 /* Event Name (Center) */
 .event-name {
-  font-size: 50px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #FFFFFF;
   flex-grow: 1;  /* Allow it to take available space */
   text-align: left;
+  margin-left: 20px;
 }
 
 /* Event Time (Middle Right) */
@@ -91,7 +92,7 @@
 }
 
 .morning-text {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #FFFFFF;
