@@ -4,11 +4,11 @@ import "../styles/Navbar.css"; // Import the external CSS file
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#events">Events</a>
-      <a href="#event-lineup">Event Lineup</a>
-      <a href="#contact">Contact</a>
+      <a href="#home-section">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#events-section">Events</a>
+      <a href="#event-lineup-section">Event Lineup</a>
+      <a href="#contact-section">Contact</a>
     </nav>
   );
 };

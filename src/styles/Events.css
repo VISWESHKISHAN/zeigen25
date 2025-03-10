@@ -3,11 +3,7 @@
     color: white;
     text-align: center;
     padding: 50px 20px;
-  }
-  
-  .events-title {
-    font-size: 3rem;
-    font-weight: bold;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   
   .events-heading {
@@ -104,4 +100,3 @@
     font-weight: bold;
     color: white;
   }
-  

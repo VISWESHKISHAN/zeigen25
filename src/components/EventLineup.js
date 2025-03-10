@@ -10,8 +10,7 @@ import ts1 from "../images/ts1.png";
 
 const EventLineup = () => {
   return (
-    <div className="event-lineup-container">
-      <div className="agenda-text">Agenda Zeigen’25</div>
+    <div id="event-lineup-section" className="event-lineup-container">
       <div className="event-text">EVENT LINEUPS</div>
       <div className="date-text">April 02, 2025</div>
       

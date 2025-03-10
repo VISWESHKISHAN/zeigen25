@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "../styles/About.css";
+import brochureImage from "../images/brochure.png";
+import GlitchText from './GlitchText';
+import Counter from "./Counter";
 
 const About = () => {
+  const [showBrochure, setShowBrochure] = useState(false);
+
+  const toggleBrochure = () => {
+    setShowBrochure(!showBrochure);
+  };
+
   const eventDate = new Date("April 2, 2025 00:00:00").getTime(); // Update as needed
 
   const calculateTimeLeft = () => {
@@ -36,19 +45,36 @@ const About = () => {
   }, []);
 
   return (
-    <div className="about-container">
-      <h2 className="about-title">About Zeigen' 25</h2>
+    <div id="about-section" className="about-container">
+      <h2 className="about-title">
+        <GlitchText
+  speed={1}
+  enableShadows={false}
+  enableOnHover={true}
+  className='custom-class'
+>
+About Zeigen' 25
+</GlitchText>
+      </h2>
       <h1 className="symposium-title">SYMPOSIUM</h1>
       <p className="about-description">
         <span className="highlight">ZEIGEN</span> is a technical symposium aimed at fostering innovation, 
         collaboration, and technical excellence. It features a range of events, including technical competitions, 
         workshops, paper presentations, and interactive sessions with industry experts. The 
-        <span className="highlight"> zeigen</span> provides a platform for students to showcase their skills, 
+        <span className="highlight"> ZEIGEN</span> provides a platform for students to showcase their skills, 
         network with professionals, and gain hands-on experience in emerging technologies. ZEIGEN is a 
         celebration of knowledge, creativity, and teamwork, bridging the gap between academia and industry.
       </p>
 
-      <button className="brochure-button">VIEW BROCHURE</button>
+      <div className="events-container">
+      <button className="brochure-button" onClick={toggleBrochure}>
+        {showBrochure ? "CLOSE BROCHURE" : "VIEW BROCHURE"}
+      </button>
+
+      <div className={`brochure-container ${showBrochure ? "show" : ""}`} onClick={toggleBrochure}>
+        <img src={brochureImage} alt="Brochure" className="brochure-image" />
+      </div>
+    </div>
 
       <div className="event-info">
         <div className="info-box">PARTICIPANT CERTIFICATION WILL BE PROVIDED</div>
@@ -59,19 +85,19 @@ const About = () => {
         <p className="event-date">Event Date <span className="event-day">April 02</span></p>
         <div className="countdown">
           <div className="countdown-item">
-            <span>{timeLeft.days}</span>
+          <Counter value={timeLeft.days} places={[10, 1]} fontSize={80} padding={5} gap={10} textColor="white" fontWeight={900} />
             <p>DAYS</p>
           </div>
           <div className="countdown-item">
-            <span>{timeLeft.hours}</span>
+            <Counter value={timeLeft.hours} places={[10, 1]} fontSize={80} padding={5} gap={10} textColor="white" fontWeight={900} />
             <p>HOURS</p>
           </div>
           <div className="countdown-item">
-            <span>{timeLeft.minutes}</span>
+            <Counter value={timeLeft.minutes} places={[10, 1]} fontSize={80} padding={5} gap={10} textColor="white" fontWeight={900} />
             <p>MINUTES</p>
           </div>
           <div className="countdown-item">
-            <span>{timeLeft.seconds}</span>
+            <Counter value={timeLeft.seconds} places={[10, 1]} fontSize={80} padding={5} gap={10} textColor="white" fontWeight={900} />
             <p>SECONDS</p>
           </div>
         </div>

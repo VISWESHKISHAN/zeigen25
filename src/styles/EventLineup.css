@@ -8,13 +8,7 @@
   text-align: center;
   width: 100vw; /* Full width */
   margin-top: 100px; /* Adjust spacing */
-}
-
-.agenda-text {
-  font-size: 3rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #FFFFFF;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .event-text {

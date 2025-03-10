@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Title Section */
@@ -23,6 +24,11 @@
   height: 314px;
   object-fit: contain;
   border-radius: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-image:hover {
+  transform: scale(1.1);
 }
 
 .title-text {
@@ -30,21 +36,24 @@
   flex-direction: column;
   align-items: flex-start;
   line-height: 80px;
+  box-shadow: none; /* Remove if unnecessary */
 }
 
 .title-upper {
-  font-size: 85px;
+  font-size: 90px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: white;
   text-align: left;
   margin-bottom: -10px;
+  text-shadow: none; /* Or reduce the shadow effect */
 }
 
 .title-lower {
   font-size: 85px;
   font-family: "Reem Kufi Fun", sans-serif;
   text-align: left;
+  text-shadow: none; /* Or reduce the shadow effect */
 }
 
 .zeigen-text {
@@ -52,13 +61,46 @@
   font-weight: 800;
 }
 
+
+
 .year-text {
   color: white;
   font-weight: 600; /* Semi-bold */
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.year-text:hover {
+  transform: scale(1.1);
+  color: #ff69b4;
 }
 
 .department-image {
   width: 221px;
   height: 307px;
   object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: none; /* Remove if unnecessary */
+}
+
+.department-image:hover {
+  transform: scale(1.1);
+}
+
+.hover-letter {
+  display: inline-block;
+  transition: transform 0.1s ease-in-out;
+}
+
+.hover-letter:hover {
+  transform: scale(1.1);
+}
+
+.department-text {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }

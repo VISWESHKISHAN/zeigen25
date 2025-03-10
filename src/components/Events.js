@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Events.css";
-
-// Import images correctly
+import TiltedCard from "./TiltedCard";
 import pblitz from "../images/pblitz.png";
 import ww from "../images/ww.png";
 import cr from "../images/cr.png";
@@ -26,8 +25,7 @@ const Events = () => {
   const [category, setCategory] = useState("Technical");
 
   return (
-    <div className="events-container">
-      <h2 className="events-title">Zeigen' 25</h2>
+    <div id="events-section" className="events-container">
       <h1 className="events-heading">EVENTS</h1>
 
       <div className="category-switch">
@@ -47,21 +45,53 @@ const Events = () => {
 
       <div className="events-grid">
         {(category === "Technical" ? technicalEvents : nonTechnicalEvents).map((event, index) => (
-          <div key={index} className="event-card">
-            <img src={event.image} alt={event.name} className="event-image" />
-            <p className="event-name-card">{event.name}</p>
-          </div>
+          <TiltedCard
+            key={index}
+            imageSrc={event.image}
+            altText={event.name}
+            captionText={event.name}
+            containerHeight="250px"
+            containerWidth="250px"
+            imageHeight="250px"
+            imageWidth="250px"
+            rotateAmplitude={10}
+            scaleOnHover={1.1}
+            showMobileWarning={false}
+            showTooltip={true}
+            displayOverlayContent={true}
+            overlayContent={
+              <p className="tilted-card-overlay-text">
+                {event.name}
+              </p>
+            }
+          />
         ))}
       </div>
 
       <div className="highlighted-event">
-        <img src={ts} alt="Innovatex" className="highlighted-image" />
-        <p className="highlighted-text">
-          <span className="highlighted-title">INNOVATEX</span>
-          <br />
-          Technical Seminar
-        </p>
+  <TiltedCard
+    imageSrc={ts}
+    altText="Innovatex"
+    captionText=""
+    containerHeight="400px"
+    containerWidth="100%"
+    imageHeight="400px"
+    imageWidth="100%"
+    rotateAmplitude={10}
+    scaleOnHover={1.05}
+    showMobileWarning={false}
+    showTooltip={false}
+    displayOverlayContent={true}
+    overlayContent={
+      <div className="highlighted-text">
+        <span className="highlighted-title">INNOVATEX</span>
+        <br />
+        Technical Seminar
       </div>
+    }
+  />
+</div>
+
     </div>
   );
 };

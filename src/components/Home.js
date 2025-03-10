@@ -2,17 +2,31 @@ import React from "react";
 import "../styles/Home.css"; // Import CSS
 import zeigen from "../images/zeigen.png";
 import klnce from "../images/klnce.png"; // Add your department image
+import TrueFocus from "./TrueFocus"; // Import TrueFocus component
+import GradientText from './GradientText'; // Import GradientText component
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div id="home-section" className="home-container">
       {/* Title Section */}
       <div className="title-container">
         <img src={zeigen} alt="Logo" className="title-image" />
         <div className="title-text">
-          <div className="title-upper">KLNCE</div>
+          {/* Apply TrueFocus effect on KLNCE */}
+          <TrueFocus 
+            sentence="KLN CE"
+            manualMode={false}
+            blurAmount={5}
+            borderColor="red"
+            animationDuration={2}
+            pauseBetweenAnimations={1}
+          />
           <div className="title-lower">
-            <span className="zeigen-text">ZEIGEN`</span>
+            <span className="zeigen-text">
+              {"ZEIGEN`".split("").map((char, index) => (
+                <span key={index} className="hover-letter">{char}</span>
+              ))}
+            </span>
             <span className="year-text">25</span>
           </div>
         </div>
@@ -20,7 +34,14 @@ const Home = () => {
 
       {/* Department Name */}
       <div className="department-text">
-        DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+        <GradientText
+  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+  animationSpeed={3}
+  showBorder={false}
+  className="custom-class"
+>
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
+</GradientText>
       </div>
 
       {/* Dim Image Below */}

@@ -6,11 +6,12 @@ import About from "./components/About";
 import Events from "./components/Events";
 import EventLineup from "./components/EventLineup";
 import Direction from "./components/Direction";
-
+import Aurora from './components/Aurora';
 
 function App() {
   return (
     <div className="App">
+      <Aurora />
       <Navbar />
       <Title />
       <About />

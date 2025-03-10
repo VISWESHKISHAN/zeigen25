@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   gap: 40px; /* More spacing between links */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Floating shadow */
   z-index: 1000;
   /* Floating Effect */
   position: fixed;
@@ -22,6 +21,7 @@
   width: fit-content;
   min-width: 650px; /* Increased width */
   max-width: 85%; /* Keep some margin on sides */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .navbar a {

@@ -5,6 +5,7 @@
 body {
   background-color: #09031a;
   color: #ffffff; /* Ensures text is visible */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .App-logo {
@@ -27,6 +28,7 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%; /* Ensure it does not exceed viewport width */
 }
 
 .App-link {
