@@ -54,22 +54,7 @@
 
 .year-text {
   color: white;
-  font-weight: 600;
-}
-
-/* Department Text */
-.department-text {
-  font-size: 55px;
-  font-family: "Jersey 25", sans-serif;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  margin-top: 20px; /* Space between title and department text */
-}
-
-/* Dim Image */
-.department-image-container {
-  margin-top: 40px; /* Vertical gap between text and image */
+  font-weight: 600; /* Semi-bold */
 }
 
 .department-image {
