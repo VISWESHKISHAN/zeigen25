@@ -1,14 +1,28 @@
-import React from "react";
-import "../styles/Navbar.css"; // Import the external CSS file
+import React, { useState } from "react";
+import "../styles/Navbar.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
-      <a href="#home-section">Home</a>
-      <a href="#about-section">About</a>
-      <a href="#events-section">Events</a>
-      <a href="#event-lineup-section">Event Lineup</a>
-      <a href="#contact-section">Contact</a>
+      <div className="nav-container">
+        {/* <div className="logo">Zeigen' 25</div> */}
+
+        <div className={`nav-links ${isOpen ? "open" : ""}`}>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#events">Events</a>
+          <a href="#event-lineup">Event lineup</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+      </div>
     </nav>
   );
 };
