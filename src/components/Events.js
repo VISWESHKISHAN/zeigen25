@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Events.css";
 import TiltedCard from "./TiltedCard";
+import TrueFocus from "./TrueFocus"; // Import TrueFocus component
 import pblitz from "../images/pblitz.png";
 import ww from "../images/ww.png";
 import cr from "../images/cr.png";
@@ -11,7 +12,7 @@ import ts from "../images/ts.png";
 
 const technicalEvents = [
   { name: "Presentation Blitz", image: pblitz },
-  { name: "WebWhiz", image: ww },
+  { name: "Web Whiz", image: ww },
   { name: "Code Rescue", image: cr },
 ];
 
@@ -61,8 +62,15 @@ const Events = () => {
             displayOverlayContent={true}
             overlayContent={
               <p className="tilted-card-overlay-text">
-                {event.name}
-              </p>
+                <TrueFocus 
+                  sentence={event.name}
+                  manualMode={false}
+                  blurAmount={5}
+                  borderColor="pink"
+                  animationDuration={1}
+                  pauseBetweenAnimations={1}
+                  />
+                </p>
             }
           />
         ))}

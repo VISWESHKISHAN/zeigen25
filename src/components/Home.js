@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Home.css"; // Import CSS
 import zeigen from "../images/zeigen.png";
 import klnce from "../images/klnce.png"; // Add your department image
-import TrueFocus from "./TrueFocus"; // Import TrueFocus component
 import GradientText from './GradientText'; // Import GradientText component
 
 const Home = () => {
@@ -12,15 +11,7 @@ const Home = () => {
       <div className="title-container">
         <img src={zeigen} alt="Logo" className="title-image" />
         <div className="title-text">
-          {/* Apply TrueFocus effect on KLNCE */}
-          <TrueFocus 
-            sentence="KLN CE"
-            manualMode={false}
-            blurAmount={5}
-            borderColor="red"
-            animationDuration={2}
-            pauseBetweenAnimations={1}
-          />
+        <div className="title-upper">KLNCE</div>
           <div className="title-lower">
             <span className="zeigen-text">
               {"ZEIGEN`".split("").map((char, index) => (

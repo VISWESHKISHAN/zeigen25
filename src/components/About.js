@@ -3,12 +3,17 @@ import "../styles/About.css";
 import brochureImage from "../images/brochure.png";
 import GlitchText from './GlitchText';
 import Counter from "./Counter";
+import SpotlightCard from './SpotlightCard';
 
 const About = () => {
   const [showBrochure, setShowBrochure] = useState(false);
 
   const toggleBrochure = () => {
     setShowBrochure(!showBrochure);
+  };
+
+  const closeBrochure = () => {
+    setShowBrochure(false);
   };
 
   const eventDate = new Date("April 2, 2025 00:00:00").getTime(); // Update as needed
@@ -71,14 +76,19 @@ About Zeigen' 25
         {showBrochure ? "CLOSE BROCHURE" : "VIEW BROCHURE"}
       </button>
 
+      <div className={`brochure-overlay ${showBrochure ? "show" : ""}`} onClick={closeBrochure}></div>
       <div className={`brochure-container ${showBrochure ? "show" : ""}`} onClick={toggleBrochure}>
         <img src={brochureImage} alt="Brochure" className="brochure-image" />
       </div>
     </div>
 
       <div className="event-info">
-        <div className="info-box">PARTICIPANT CERTIFICATION WILL BE PROVIDED</div>
-        <div className="info-box">LUNCH AND REFRESHMENT WILL BE PROVIDED</div>
+        <div className="info-box"><SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+        PARTICIPANT CERTIFICATION WILL BE PROVIDED
+</SpotlightCard></div>
+        <div className="info-box"><SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+        LUNCH AND REFRESHMENT WILL BE PROVIDED
+</SpotlightCard></div>
       </div>
 
       <div className="countdown-container">

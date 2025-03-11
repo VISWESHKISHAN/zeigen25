@@ -1,5 +1,4 @@
 .about-container {
-  background-color: #0a0213;
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -47,7 +46,25 @@
   .brochure-container.show {
     opacity: 1;
     visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(2);
+  }
+
+  .brochure-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 999;
+  }
+  
+  .brochure-overlay.show {
+    opacity: 1;
+    visibility: visible;
   }
   
   .brochure-image {
@@ -75,7 +92,6 @@
 
   }
   
-  
   .event-info {
     display: flex;
     justify-content: center;
@@ -89,7 +105,6 @@
   }
   
   .info-box {
-    background-color: rgba(193, 46, 248, 0.2);
     color: white;
     padding: 15px;
     font-size: 0.9rem;
@@ -100,7 +115,6 @@
   }
   
   .info-box:hover {
-    background-color: rgba(193, 46, 248, 0.3);
     transform: translateY(-5px);
   }
   
