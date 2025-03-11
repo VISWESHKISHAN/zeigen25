@@ -88,20 +88,6 @@ function Number({ mv, number, height }) {
             />
           ))}
         </div>
-        <div className="gradient-container">
-          <div
-            className="top-gradient"
-            style={topGradientStyle ? topGradientStyle : defaultTopGradientStyle}
-          ></div>
-          <div
-            className="bottom-gradient"
-            style={
-              bottomGradientStyle
-                ? bottomGradientStyle
-                : defaultBottomGradientStyle
-            }
-          ></div>
-        </div>
       </div>
     );
   }

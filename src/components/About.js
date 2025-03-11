@@ -70,8 +70,6 @@ About Zeigen' 25
         network with professionals, and gain hands-on experience in emerging technologies. ZEIGEN is a 
         celebration of knowledge, creativity, and teamwork, bridging the gap between academia and industry.
       </p>
-
-      <div className="events-container">
       <button className="brochure-button" onClick={toggleBrochure}>
         {showBrochure ? "CLOSE BROCHURE" : "VIEW BROCHURE"}
       </button>
@@ -80,7 +78,7 @@ About Zeigen' 25
       <div className={`brochure-container ${showBrochure ? "show" : ""}`} onClick={toggleBrochure}>
         <img src={brochureImage} alt="Brochure" className="brochure-image" />
       </div>
-    </div>
+
 
       <div className="event-info">
         <div className="info-box"><SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
@@ -94,7 +92,7 @@ About Zeigen' 25
       <div className="countdown-container">
         <p className="event-date">Event Date <span className="event-day">April 02</span></p>
         <div className="countdown">
-          <div className="countdown-item">
+        <div className="countdown-item">
           <Counter value={timeLeft.days} places={[10, 1]} fontSize={80} padding={5} gap={10} textColor="white" fontWeight={900} />
             <p>DAYS</p>
           </div>

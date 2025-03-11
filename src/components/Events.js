@@ -40,7 +40,7 @@ const Events = () => {
           className={`category-button ${category === "NonTechnical" ? "active" : ""}`}
           onClick={() => setCategory("NonTechnical")}
         >
-          NonTechnical
+          Non Technical
         </button>
       </div>
 

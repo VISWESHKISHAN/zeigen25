@@ -37,7 +37,9 @@ DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
 
       {/* Dim Image Below */}
       <div className="department-image-container">
+      <a href="https://klnce.edu/" target="_blank" rel="noopener noreferrer">
         <img src={klnce} alt="Department" className="department-image" />
+        </a>
       </div>
     </div>
   );

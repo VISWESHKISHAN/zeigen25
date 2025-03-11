@@ -4,4 +4,5 @@
     position: fixed;
     pointer-events: none; /* Allows clicks to pass through */
     z-index: -1;  /* Moves it behind everything */
-  }
+
+}
