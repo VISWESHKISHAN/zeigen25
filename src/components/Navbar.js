@@ -2,29 +2,38 @@ import React, { useState } from "react";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <nav className="navbar">
-      <div className="nav-container">
-        {/* <div className="logo">Zeigen' 25</div> */}
+    const toggleNav = () => {
+        setIsOpen(!isOpen);
+    };
 
-        <div className={`nav-links ${isOpen ? "open" : ""}`}>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#events">Events</a>
-          <a href="#event-lineup">Event lineup</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-      </div>
-    </nav>
-  );
+    return (
+        <>
+            <nav className="navbar">
+                <div className="hamburger" onClick={toggleNav}>
+                    &#9776;
+                </div>
+                <div className="menu-nav">
+                    <a href="#home-section">Home</a>
+                    <a href="#about-section">About</a>
+                    <a href="#events-section">Events</a>
+                    <a href="#event-lineup-section">Event Lineup</a>
+                    <a href="#contact-section">Contact</a>
+                </div>
+            </nav>
+            <div className={`mobile-nav ${isOpen ? "open" : ""}`}>
+                <div className="close-btn" onClick={toggleNav}>
+                    &times;
+                </div>
+                <a href="#home-section" onClick={toggleNav}>Home</a>
+                <a href="#about-section" onClick={toggleNav}>About</a>
+                <a href="#events-section" onClick={toggleNav}>Events</a>
+                <a href="#event-lineup-section" onClick={toggleNav}>Event Lineup</a>
+                <a href="#contact-section" onClick={toggleNav}>Contact</a>
+            </div>
+        </>
+    );
 };
 
 export default Navbar;

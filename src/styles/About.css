@@ -1,7 +1,7 @@
 .about-container {
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px;
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   
@@ -12,18 +12,18 @@
   }
   
   .symposium-title {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     color: #c12ef8;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   
   .about-description {
-    font-size: 1.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    font-size: 2rem;
+    margin: 40px 100px;
     line-height: 1.6;
+    text-align: justify;
   }
   
   .highlight {
@@ -79,10 +79,10 @@
     background-color: #5c2b78;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 30px 50px;
+    font-size: 2rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   }
   
@@ -95,7 +95,7 @@
   .event-info {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     margin-top: 30px;
     transition: transform 0.3s;
   }
@@ -107,10 +107,11 @@
   .info-box {
     color: white;
     padding: 15px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     border-radius: 10px;
-    width: 250px;
+    width: 400px;
     text-align: center;
+    line-height: 1.6;
     transition: background-color 0.3s, transform 0.3s;
   }
   
@@ -123,20 +124,22 @@
   }
   
   .event-date {
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-weight: 800;
   }
   
   .event-day {
     color: #c12ef8;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   
   .countdown {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 35px;
     margin-top: 20px;
+    max-height: 150px;
   }
   
   .countdown-item {
@@ -157,3 +160,110 @@
     font-size: 0.8rem;
     margin-top: 5px;
   }
+
+  /* Existing styles remain unchanged */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 40px 15px;
+  }
+
+  .about-description {
+    margin: 40px 12px;
+  }
+
+  .event-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box {
+    width: 90%;
+  }
+
+  .countdown {
+    gap: 15px;
+  }
+
+  .countdown-item {
+    width: 70px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .symposium-title {
+    font-size: 4rem;
+  }
+
+  .brochure-image {
+    width: 90%;
+  }
+
+  .brochure-container.show {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .countdown-item {
+    width: 60px;
+    padding: 12px;
+  }
+
+  .countdown-item span {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 30px;
+  }
+
+  .symposium-title {
+    font-size: 3rem;
+  }
+
+  .about-description {
+    font-size: 1.5rem;
+    max-width: 100%;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .brochure-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .event-info {
+    gap: 15px;
+  }
+
+  .info-box {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .countdown {
+    gap: 10px;
+  }
+
+  .countdown-item {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .countdown-item span {
+    font-size: 1.5rem;
+  }
+
+  .countdown-item p {
+    font-size: 0.7rem;
+  }
+}

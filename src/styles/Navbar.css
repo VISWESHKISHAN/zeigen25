@@ -1,75 +1,89 @@
-/* General Styles */
+/* Navbar.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a0215;
+  color: white;
+}
+
 .navbar {
-  padding: 50px 40px;
-  justify-items: center;
-}
-
-.nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  width: 500px;
-}
-
-.logo {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bold;
-}
-
-/* Navigation Links */
-.nav-links {
-  display: flex;
-  gap: 40px;
-  background-color: #191919;
+  background-color: #222;
   padding: 10px 20px;
-  border-radius: 30px;
+  border-radius: 50px;
+  max-width: 60%;
+  margin: auto;
+  position: relative;
+  top: 20px;
 }
 
-.nav-links a {
-  color: #c12ef8;
+.navbar a {
+  color: #e600ff;
   text-decoration: none;
-  font-size: 1rem;
   font-weight: bold;
+  margin: 0 15px;
 }
 
-.nav-links a:hover {
-  color: white;
+.menu-nav {
+  display: flex;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
-  flex-direction: column;
   cursor: pointer;
+  font-size: 30px;
+  color: #e600ff;
 }
 
-.bar {
-  background-color: #050006;
-  height: 3px;
-  width: 25px;
-  margin: 2px 0;
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  transition: left 0.3s ease-in-out;
 }
 
-/* Responsive for smaller screens */
-@media screen and (max-width: 768px) {
-  .nav-links {
+.mobile-nav.open {
+  left: 0;
+}
+
+.mobile-nav a {
+  padding: 15px;
+  text-align: center;
+  color: #e600ff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #e600ff;
+}
+
+@media (max-width: 768px) {
+  .menu-nav {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-    background-color: #191919;
-    padding: 10px;
-    border-radius: 10px;
   }
 
-  .nav-links.open {
-    display: flex;
+  .navbar {
+    max-width: 10%;
+    padding: 10px 10px;
+    margin-right: 10px;
   }
 
   .hamburger {
-    display: flex;
+    display: block;
   }
 }
