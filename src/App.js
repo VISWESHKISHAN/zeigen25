@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import "./App.css"; // Global styles
-import Title from "./components/Home";
+import Home from "./components/Home";
 import About from "./components/About";
 import Events from "./components/Events";
 import EventLineup from "./components/EventLineup";
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Aurora />
       <Navbar />
-      <Title />
+      <Home />
       <About />
       <Events />
       <EventLineup />

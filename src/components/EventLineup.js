@@ -1,5 +1,7 @@
 import React from "react";
-import "../styles/EventLineup.css"; // Import CSS file
+import '../styles/EventLineup.css';
+import FlowingMenu from './FlowingMenu'
+import tr from '../images/timer.png'
 import pblitz1 from "../images/pblitz1.png"; // Import image
 import ww from "../images/ww.png";
 import cr from "../images/cr.png";
@@ -8,163 +10,28 @@ import fw from "../images/fw.png";
 import st from "../images/st.png";
 import ts1 from "../images/ts1.png";
 
+const Items = [
+  { link: '#', text: 'Technical Seminar',uri:tr , text1: 'MORNING', image: ts1 },
+  { link: '#', text: 'Presentation Blitz',uri:tr , text1: 'MORNING', image: pblitz1 },
+  { link: '#', text: 'Code Rescue', uri:tr , text1: 'MORNING', image: cr },
+  { link: '#', text: 'Web Whiz',uri:tr , text1: 'MORNING', image: ww },
+  { link: '#', text: 'Funfinity Wars',uri:tr , text1: 'AFTERNOON', image: fw },
+  { link: '#', text: 'Shark Tank', uri:tr , text1: 'AFTERNOON', image: st },
+  { link: '#', text: 'Cinimatica',uri:tr , text1: 'AFTERNOON', image: cm }
+];
+
 const EventLineup = () => {
   return (
-    <div id="event-lineup-section" className="event-lineup-container">
+    <div id="event-lineup-section" >
+      <div className="event-lineup-container">
       <div className="event-text">EVENT LINEUPS</div>
       <div className="date-text">April 02, 2025</div>
-      
-      {/* Event Box */}
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${ts1})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">Technical Seminar</div>
-
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">MORNING</span>
 </div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
+
+    <div style={{ height: '600px', position: 'relative' }}>
+  <FlowingMenu items={Items} />
 </div>
-      </div>
-
-
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${pblitz1})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">Presentation Blitz</div>
-
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">MORNING</span>
 </div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
-</div>
-      </div>
-
-
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${cr})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">Code Rescue</div>
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">MORNING</span>
-</div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
-</div>
-      </div>
-
-
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${ww})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">WebWhiz</div>
-
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">MORNING</span>
-</div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
-</div>
-      </div>
-
-
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${fw})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">Funfinity Wars</div>
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">AFTERNOON</span>
-</div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
-</div>
-      </div>
-
-
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${st})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">Shark Tank</div>
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">AFTERNOON</span>
-</div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
-</div>
-      </div>
-
-
-      <div className="event-box">
-        {/* Left side: Image placeholder */}
-        <div
-  className="event-icon"
-  style={{ backgroundImage: `url(${cm})` }}
-></div>
-        {/* Event Name (centered height-wise) */}
-        <div className="event-name">Cinimatica</div>
-
-        {/* Middle: Small icon + "MORNING" text */}
-<div className="event-time">
-  <div className="event-time-icon"></div>
-  <span className="morning-text">AFTERNOON</span>
-</div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-  VIEW MORE
-  <div className="view-more-icon"></div>
-</div>
-      </div>
-    </div>
   );
 };
 
