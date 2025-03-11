@@ -11,13 +11,13 @@ import st from "../images/st.png";
 import ts1 from "../images/ts1.png";
 
 const Items = [
-  { link: '#', text: 'Technical Seminar',uri:tr , text1: 'MORNING', image: ts1 },
-  { link: '#', text: 'Presentation Blitz',uri:tr , text1: 'MORNING', image: pblitz1 },
-  { link: '#', text: 'Code Rescue', uri:tr , text1: 'MORNING', image: cr },
-  { link: '#', text: 'Web Whiz',uri:tr , text1: 'MORNING', image: ww },
-  { link: '#', text: 'Funfinity Wars',uri:tr , text1: 'AFTERNOON', image: fw },
-  { link: '#', text: 'Shark Tank', uri:tr , text1: 'AFTERNOON', image: st },
-  { link: '#', text: 'Cinimatica',uri:tr , text1: 'AFTERNOON', image: cm }
+  {  text: 'Technical Seminar',uri:tr , text1: 'MORNING', image: ts1 },
+  { link: 'events/Presentation-BlitZ', text: 'Presentation Blitz',uri:tr , text1: 'MORNING', image: pblitz1 },
+  { link: 'events/CodeRescue', text: 'Code Rescue', uri:tr , text1: 'MORNING', image: cr },
+  { link: 'events/WebWhiz', text: 'Web Whiz',uri:tr , text1: 'MORNING', image: ww },
+  { link: 'events/FunFinity-Wars', text: 'Funfinity Wars',uri:tr , text1: 'AFTERNOON', image: fw },
+  { link: 'events/SharK-Tank', text: 'Shark Tank', uri:tr , text1: 'AFTERNOON', image: st },
+  { link: 'events/Cinematica', text: 'Cinimatica',uri:tr , text1: 'AFTERNOON', image: cm }
 ];
 
 const EventLineup = () => {

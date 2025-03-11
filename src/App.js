@@ -1,24 +1,28 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import "./App.css"; // Global styles
-import Home from "./components/Home";
-import About from "./components/About";
-import Events from "./components/Events";
-import EventLineup from "./components/EventLineup";
-import Direction from "./components/Direction";
-import Aurora from './components/Aurora';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Cinematica from "./components/Events/Cinematica";
+import FunFinity from "./components/Events/FunFinity";
+import SharkTank from "./components/Events/SharkTank";
+import WebWhiz from "./components/Events/WebWhiz";
+import CodeRescue from "./components/Events/CodeRescue";
+import PaperPresentation from "./components/Events/PaperPresntation";
+import Main from "./Main";
 
 function App() {
   return (
-    <div className="App">
-      <Aurora />
-      <Navbar />
-      <Home />
-      <About />
-      <Events />
-      <EventLineup />
-      <Direction />
-    </div>
+    <Router>
+<Routes>
+          <Route path="/" element={<Main/>} />
+          <Route path="events/Presentation-BlitZ" element={<PaperPresentation />} />
+          <Route path="events/CodeRescue" element={<CodeRescue />} />
+          <Route path="events/WebWhiz" element={<WebWhiz />} />
+          <Route path="events/Cinematica" element={<Cinematica />} />
+          <Route path="events/FunFinity-Wars" element={<FunFinity />} />
+          <Route path="events/SharK-Tank" element={<SharkTank />} />
+        </Routes>
+
+    </Router>
+        
   );
 }
 

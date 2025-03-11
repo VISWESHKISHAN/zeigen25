@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Events.css";
 import TiltedCard from "./TiltedCard";
-import TrueFocus from "./TrueFocus"; // Import TrueFocus component
+import TrueFocus from "./TrueFocus";
 import pblitz from "../images/pblitz.png";
 import ww from "../images/ww.png";
 import cr from "../images/cr.png";
@@ -11,19 +11,20 @@ import st from "../images/st.png";
 import ts from "../images/ts.png";
 
 const technicalEvents = [
-  { name: "Presentation Blitz", image: pblitz },
-  { name: "Web Whiz", image: ww },
-  { name: "Code Rescue", image: cr },
+  { name: "Presentation Blitz", image: pblitz, path: "/events/Presentation-BlitZ" },
+  { name: "Web Whiz", image: ww, path: "/events/WebWhiz" },
+  { name: "Code Rescue", image: cr, path: "/events/CodeRescue" },
 ];
 
 const nonTechnicalEvents = [
-  { name: "Cinematica", image: cm },
-  { name: "Funfinity Wars", image: fw },
-  { name: "Shark Tank", image: st },
+  { name: "Cinematica", image: cm, path: "/events/Cinematica" },
+  { name: "Funfinity Wars", image: fw, path: "/events/FunFinity-Wars" },
+  { name: "Shark Tank", image: st, path: "/events/SharK-Tank" },
 ];
 
 const Events = () => {
   const [category, setCategory] = useState("Technical");
+  
 
   return (
     <div id="events-section" className="events-container">
@@ -46,7 +47,7 @@ const Events = () => {
 
       <div className="events-grid">
         {(category === "Technical" ? technicalEvents : nonTechnicalEvents).map((event, index) => (
-          <TiltedCard
+            <TiltedCard
             key={index}
             imageSrc={event.image}
             altText={event.name}
@@ -69,37 +70,37 @@ const Events = () => {
                   borderColor="pink"
                   animationDuration={1}
                   pauseBetweenAnimations={1}
-                  />
-                </p>
+                />
+              </p>
             }
+            navigateTo={event.path} // ✅ Fix navigation
           />
         ))}
       </div>
 
       <div className="highlighted-event">
-  <TiltedCard
-    imageSrc={ts}
-    altText="Innovatex"
-    captionText=""
-    containerHeight="400px"
-    containerWidth="100%"
-    imageHeight="400px"
-    imageWidth="100%"
-    rotateAmplitude={10}
-    scaleOnHover={1.05}
-    showMobileWarning={false}
-    showTooltip={false}
-    displayOverlayContent={true}
-    overlayContent={
-      <div className="highlighted-text">
-        <span className="highlighted-title">INNOVATEX</span>
-        <br />
-        Technical Seminar
+        <TiltedCard
+          imageSrc={ts}
+          altText="Innovatex"
+          captionText=""
+          containerHeight="400px"
+          containerWidth="100%"
+          imageHeight="400px"
+          imageWidth="100%"
+          rotateAmplitude={10}
+          scaleOnHover={1.05}
+          showMobileWarning={false}
+          showTooltip={false}
+          displayOverlayContent={true}
+          overlayContent={
+            <div className="highlighted-text">
+              <span className="highlighted-title">INNOVATEX</span>
+              <br />
+              Technical Seminar
+            </div>
+          }
+        />
       </div>
-    }
-  />
-</div>
-
     </div>
   );
 };
