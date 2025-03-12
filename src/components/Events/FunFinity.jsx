@@ -20,7 +20,7 @@ export default function FunFinity(){
                                             <h3>REGISTRATION</h3>
                                             <p>Registration Fee :<span><BiRupee/></span>250 Per Head</p>
                                          <div className='RegisterBtn'>
-                                            <p><a href="https://forms.gle/mrUbzaNAQDudphBy5">Register Now <FaArrowRightLong/></a></p>
+                                            <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong/></a></p>
                                           </div> 
                                         </div>
                                     </div>
@@ -40,7 +40,7 @@ export default function FunFinity(){
                                        </div>
                                        <div className='More-Details'>
                                             <h2>FOR MORE DETAILS</h2>
-                                            <p>Yogasri-96007 57423</p>
+                                            <p>Yogasri - 96007 57423</p>
                                             <p>santhoshini - 86673 09662</p>
                                        </div>
                                     </div>           

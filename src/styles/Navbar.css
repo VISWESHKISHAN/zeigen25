@@ -10,13 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222;
-  padding: 10px 20px;
-  border-radius: 50px;
-  max-width: 45%;
   margin: auto;
   position: relative;
-  top: 20px;
 }
 
 .navbar a {
@@ -28,6 +23,15 @@ body {
 
 .menu-nav {
   display: flex;
+  position: fixed;
+  /* transform: translateX(-1); Center it horizontally */
+  width: fit-content;
+  background-color: #222;
+  padding: 10px 20px;
+  border-radius: 50px;
+  /* max-width: 30%; */
+  top: 20px;
+  z-index: 1000;
 }
 
 .hamburger {
@@ -35,6 +39,12 @@ body {
   cursor: pointer;
   font-size: 30px;
   color: #e600ff;
+  background-color: #222;
+  padding: 10px;
+  border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  z-index: 1000;
 }
 
 .mobile-nav {

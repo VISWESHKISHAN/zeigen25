@@ -28,7 +28,7 @@ export default function FooterInfo(){
                                 <li> <a href="https://www.google.com/maps?q=9.836167,78.163222" target="_blank" >KLNCE</a></li>
                                 <li> <a href="mailto:zeigen2k25@gmail.com" target="_blank">Email</a></li>
                                 <li> <a href="https://www.instagram.com/zeigen_2k25/?utm_source=qr&igsh=bWgybHdib2ExdHIy#" target="_blank">Instagram</a></li>
-                                <li> <a href="#">Whatsapp</a></li>
+                                <li> <a href="https://wa.me/8015440059" target="_blank">Whatsapp</a></li>
                             </ul>
                         </div>
                         <div className='Events-CO-ORDINATORS'> 

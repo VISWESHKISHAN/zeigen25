@@ -20,7 +20,7 @@ export default function SharkTank(){
                                             <h3>REGISTRATION</h3>
                                             <p>Registration Fee :<span><BiRupee/></span>250 Per Head</p>
                                          <div className='RegisterBtn'>
-                                            <p><a href="https://forms.gle/mrUbzaNAQDudphBy5">Register Now <FaArrowRightLong/></a></p>
+                                            <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong/></a></p>
                                           </div> 
                                         </div>
                                     </div>
@@ -49,7 +49,7 @@ export default function SharkTank(){
                                         </div>
                                        <div className='More-Details'>
                                             <h2>FOR MORE DETAILS</h2>
-                                            <p>Kishan-90251 78348</p>
+                                            <p>V Visweshkishan - 90251 78348</p>
                                             <p>Sahana PS - 86374 42114</p>
                                        </div>
                                     </div>           

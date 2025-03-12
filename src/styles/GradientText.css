@@ -24,7 +24,7 @@
     background-size: 300% 100%;
     animation: gradient linear infinite;
     border-radius: inherit;
-    z-index: 0;
+    /* z-index: 0; */
     pointer-events: none;
   }
   
@@ -40,7 +40,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: #060606;
-    z-index: -1;
+    /* z-index: -1; */
   }
   
   @keyframes gradient {
@@ -60,7 +60,7 @@
   .text-content {
     display: inline-block;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
     background-size: 300% 100%;
     background-clip: text;
     -webkit-background-clip: text;

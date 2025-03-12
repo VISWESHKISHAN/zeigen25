@@ -19,7 +19,7 @@ export default function CodeRescue(){
                                     <h3>REGISTRATION</h3>
                                     <p>Registration Fee :<span><BiRupee/></span>250 Per Head</p>
                                     <div className='RegisterBtn'>
-                                        <p><a href="https://forms.gle/mrUbzaNAQDudphBy5">Register Now <FaArrowRightLong/></a></p>
+                                        <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong/></a></p>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ export default function CodeRescue(){
                                </div>
                                <div className='More-Details'>
                                     <h2>FOR MORE DETAILS</h2>
-                                    <p>Naveen Raj-95855 63001</p>
+                                    <p>Naveen Raj - 95855 63001</p>
                                     <p>Joel - 84894 22287</p>
                                </div>
                             </div>           

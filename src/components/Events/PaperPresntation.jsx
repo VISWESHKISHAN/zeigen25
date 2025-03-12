@@ -20,7 +20,7 @@ export default function PaperPresentation(){
                                 <h3>REGISTRATION</h3>   
                                 <p>Registration Fee :<span><BiRupee/></span>250 Per Head</p>
                                 <div className='RegisterBtn'>
-                                    <p><a href="https://forms.gle/mrUbzaNAQDudphBy5">Register Now <FaArrowRightLong/></a></p>
+                                    <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong/></a></p>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +52,8 @@ export default function PaperPresentation(){
                             </div>
                             <div className='More-Details'>
                                 <h2>FOR MORE DETAILS</h2>
-                                <p>M.Sahadevi-82489 90886</p>
-                                <p>P.Keerthiga-73970 47581</p>
+                                <p>M.Sahadevi - 82489 90886</p>
+                                <p>P.Keerthiga - 73970 47581</p>
                             </div>
                         </div>
                     </div>
