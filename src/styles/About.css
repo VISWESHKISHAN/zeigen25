@@ -12,7 +12,7 @@
   }
   
   .symposium-title {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #c12ef8;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
   }
   
   .about-description {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 40px 100px;
     line-height: 1.6;
     text-align: justify;

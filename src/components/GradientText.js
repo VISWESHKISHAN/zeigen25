@@ -3,7 +3,7 @@ import "../styles/GradientText.css";
 export default function GradientText({
   children,
   className = "",
-  colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"], // Default colors
+  colors = ["#63439D", "#C266FF", "#9180B3", "#C266FF", "#63439D"], // Default colors
   animationSpeed = 8, // Default animation speed in seconds
   showBorder = false, // Default overlay visibility
 }) {

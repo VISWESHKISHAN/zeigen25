@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/About.css";
 import brochureImage from "../images/brochure.png";
-import GlitchText from './GlitchText';
+// import GlitchText from './GlitchText';
 import Counter from "./Counter";
 import SpotlightCard from './SpotlightCard';
 
@@ -52,14 +52,8 @@ const About = () => {
   return (
     <div id="about-section" className="about-container">
       <h2 className="about-title">
-        <GlitchText
-  speed={1}
-  enableShadows={false}
-  enableOnHover={true}
-  className='custom-class'
->
+        
 About Zeigen' 25
-</GlitchText>
       </h2>
       <h1 className="symposium-title">SYMPOSIUM</h1>
       <p className="about-description">
