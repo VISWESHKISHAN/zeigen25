@@ -1,26 +1,37 @@
 import React from "react";
-import "../styles/Direction.css";
-import mapImage from "../images/map.png";
+import "../styles/Direction.css"; // Import CSS
+import mapImage from "../images/map.png"
 
 const Direction = () => {
-    const googleMapsUrl = "https://www.google.com/maps?q=9.836167,78.163222";// KLNCE Location
-
+  const googleMapsUrl = "https://www.google.com/maps?q=9.836167,78.163222";
   return (
     <div className="direction-container">
-      {/* Left Side: Text */}
-      <div className="direction-text">
-        <h2 className="direction-title">Get Direction To</h2>
-        <h1 className="direction-location">KLNCE</h1>
+      <div className="direction-content">
+        <h2 className="direction-title">
+          GET DIRECTION TO <span className="highlight">KLNCE</span>
+        </h2>
+        <p className="direction-text">
+          KLN College of Engineering is one of the premier institutions in Tamil Nadu, 
+          known for its excellence in technical education and innovation. Easily accessible 
+          from Madurai, the campus offers state-of-the-art facilities in a serene environment.
+        </p>
+        <a
+          href="https://www.google.com/maps/place/K.L.N.+College+of+Engineering/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="direction-button"
+        >
+          GET DIRECTION →
+        </a>
       </div>
 
-      {/* Right Side: Map */}
-      <img src={mapImage} alt="Map" className="direction-map" />
-
-      {/* Clickable Rectangle for Google Maps */}
-      <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="direction-rectangle">
-        <span className="rectangle-text">GET DIRECTION</span>
-        <span className="rectangle-arrow">→</span>
-      </a>
+      <div className="direction-map">
+        <img
+          src={mapImage} 
+          alt="KLNCE Location Map"
+          className="map-image"
+        />
+      </div>
     </div>
   );
 };

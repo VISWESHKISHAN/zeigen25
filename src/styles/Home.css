@@ -27,6 +27,7 @@
   object-fit: contain;
   border-radius: 50px;
   transition: transform 0.3s ease-in-out;
+  margin-left: -90px;
 }
 
 .title-image:hover {
@@ -105,4 +106,145 @@
   color: white;
   text-align: center;
   margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .title-upper {
+    font-size: 70px;
+  }
+
+  .title-lower {
+    font-size: 65px;
+  }
+
+  .title-image {
+    width: 280px;
+    height: 270px;
+  }
+
+  .department-image {
+    width: 180px;
+    height: 250px;
+  }
+
+  .department-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title-container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .title-text {
+    align-items: center;
+  }
+
+  .title-upper {
+    font-size: 60px;
+  }
+
+  .title-lower {
+    font-size: 55px;
+  }
+
+  .title-image {
+    width: 250px;
+    height: 240px;
+  }
+
+  .department-text {
+    font-size: 22px;
+  }
+
+  .department-image {
+    width: 160px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    margin-top: 80px;
+  }
+
+  .title-upper {
+    font-size: 50px;
+  }
+
+  .title-lower {
+    font-size: 45px;
+  }
+
+  .title-image {
+    width: 220px;
+    height: 200px;
+  }
+
+  .department-text {
+    font-size: 20px;
+  }
+
+  .department-image {
+    width: 140px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-container {
+    margin-top: 60px;
+  }
+
+  .title-upper {
+    font-size: 40px;
+  }
+
+  .title-lower {
+    font-size: 38px;
+  }
+
+  .title-image {
+    width: 180px;
+    height: 160px;
+    margin-left: -65px;
+  }
+
+  .department-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .department-image {
+    width: 120px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 400px) {
+  .title-upper {
+    font-size: 35px;
+  }
+
+  .title-lower {
+    font-size: 32px;
+  }
+
+  .title-image {
+    width: 150px;
+    height: 140px;
+  }
+
+  .department-text {
+    font-size: 16px;
+  }
+
+  .department-image {
+    width: 100px;
+    height: 160px;
+  }
 }

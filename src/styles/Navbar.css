@@ -1,4 +1,8 @@
 /* Navbar.css */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -19,19 +23,34 @@ body {
   text-decoration: none;
   font-weight: bold;
   margin: 0 15px;
+  font-size: 23px;
 }
 
 .menu-nav {
   display: flex;
   position: fixed;
-  /* transform: translateX(-1); Center it horizontally */
   width: fit-content;
   background-color: #222;
   padding: 10px 20px;
   border-radius: 50px;
-  /* max-width: 30%; */
+  gap: 30px;
   top: 20px;
   z-index: 1000;
+  height: 80px;
+  align-items: center;  
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: #DF2DEF;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 5px 10px;
+}
+
+.menu-nav a:hover {
+  color: white;
+  transform: scale(1.1);
 }
 
 .hamburger {
@@ -58,6 +77,7 @@ body {
   flex-direction: column;
   padding-top: 50px;
   transition: left 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .mobile-nav.open {
@@ -95,5 +115,6 @@ body {
 
   .hamburger {
     display: block;
+    margin-right: 40px;
   }
 }
