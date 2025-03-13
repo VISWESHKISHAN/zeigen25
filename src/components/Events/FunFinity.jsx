@@ -40,8 +40,8 @@ export default function FunFinity(){
                                        </div>
                                        <div className='More-Details'>
                                             <h2>FOR MORE DETAILS</h2>
-                                            <p>Yogasri - 96007 57423</p>
-                                            <p>santhoshini - 86673 09662</p>
+                                            <p>9600757423</p>
+                                            <p>8667309662</p>
                                        </div>
                                     </div>           
                             </div>

@@ -39,8 +39,8 @@ export default function Cinematica(){
                                        </div>
                                        <div className='Cinematic-More-Details'>
                                             <h2>FOR MORE DETAILS</h2>
-                                            <p>K.S Keerthiga - 75400 50459</p>
-                                            <p>Afrin Mekhanas - 93451 64496</p>
+                                            <p>7540050459</p>
+                                            <p>9345164496</p>
                                        </div>
                                     </div>           
                             </div>

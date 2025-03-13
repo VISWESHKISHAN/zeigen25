@@ -51,8 +51,8 @@ export default function CodeRescue(){
                                </div>
                                <div className='More-Details'>
                                     <h2>FOR MORE DETAILS</h2>
-                                    <p>Naveen Raj - 95855 63001</p>
-                                    <p>Joel - 84894 22287</p>
+                                    <p>9585563001</p>
+                                    <p>8489422287</p>
                                </div>
                             </div>           
                     </div>

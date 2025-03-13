@@ -52,8 +52,8 @@ export default function PaperPresentation(){
                             </div>
                             <div className='More-Details'>
                                 <h2>FOR MORE DETAILS</h2>
-                                <p>M.Sahadevi - 82489 90886</p>
-                                <p>P.Keerthiga - 73970 47581</p>
+                                <p>8248990886</p>
+                                <p>7397047581</p>
                             </div>
                         </div>
                     </div>

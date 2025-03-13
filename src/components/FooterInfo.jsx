@@ -49,6 +49,7 @@ export default function FooterInfo(){
             </div>
             <div className='DevelpedBy'>
                 <p>Developed By</p>
+                <p>V.Visweshkishan | S.A.Shobika | M.Madesh | V.G.Kishore Kumar | M.Kanishka </p>
             </div>
         </section>
     )

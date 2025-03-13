@@ -45,8 +45,8 @@ export default function WebWhiz(){
                                        </div>
                                        <div className='More-Details'>
                                             <h2>FOR MORE DETAILS</h2>
-                                            <p>Mathupriya S-99946 97700</p>
-                                            <p>Nivetha RS - 95972 35924</p>
+                                            <p>99946 97700</p>
+                                            <p>95972 35924</p>
                                        </div>
                                     </div>           
                             </div>

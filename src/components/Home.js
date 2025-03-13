@@ -26,7 +26,7 @@ const Home = () => {
       {/* Department Name */}
       <div className="department-text">
         <GradientText
-  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+  colors={["#3905C7","#63439D", "#C266FF", "#FFFFFF", "#C266FF", "#63439D","#3905C7"]}
   animationSpeed={3}
   showBorder={false}
   className="custom-class"

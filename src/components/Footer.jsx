@@ -10,7 +10,7 @@ export default function Footer(){
         <div className='Contact'>
             <div className='Contact-info'>
                 <div className='Contact-Title'>
-                  <h2>Having Questions</h2>
+                  <h2>Having Questions ?</h2>
                   <h1>CONTACT US</h1>
                 </div>
                 <div className='Contact-ways'>

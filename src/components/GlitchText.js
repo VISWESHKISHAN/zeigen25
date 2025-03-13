@@ -3,7 +3,8 @@ import '../styles/GlitchText.css';
 const GlitchText = ({
   children,
   speed = 1,
-  enableShadows = false,
+  enableShadows = false
+  ,
   enableOnHover = true,
   className = '',
 }) => {

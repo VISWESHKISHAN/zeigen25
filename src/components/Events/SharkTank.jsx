@@ -49,8 +49,8 @@ export default function SharkTank(){
                                         </div>
                                        <div className='More-Details'>
                                             <h2>FOR MORE DETAILS</h2>
-                                            <p>V Visweshkishan - 90251 78348</p>
-                                            <p>Sahana PS - 86374 42114</p>
+                                            <p>9025178348</p>
+                                            <p>8637442114</p>
                                        </div>
                                     </div>           
                             </div>
