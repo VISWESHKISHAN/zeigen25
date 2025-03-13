@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/EventLineup.css"; // Import CSS file
 import pblitz1 from "../images/pblitz1.png"; // Import image
 import ww from "../images/ww.png";
@@ -9,6 +10,7 @@ import st from "../images/st.png";
 import ts1 from "../images/ts1.png";
 
 const EventLineup = () => {
+  const navigate = useNavigate();
   return (
     <div id="event-lineup-section" >
     <div className="event-lineup-container">
@@ -31,11 +33,6 @@ const EventLineup = () => {
           <div className="event-time-icon"></div>
           <span className="morning-text">MORNING</span>
         </div>
-        {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
-          VIEW MORE
-          <div className="view-more-icon"></div>
-        </div>
       </div>
 
       <div className="event-box">
@@ -53,7 +50,7 @@ const EventLineup = () => {
           <span className="morning-text">MORNING</span>
         </div>
         {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
+        <div className="view-more" onClick={() => navigate("events/Presentation-BlitZ")}>
           VIEW MORE
           <div className="view-more-icon"></div>
         </div>
@@ -73,7 +70,7 @@ const EventLineup = () => {
           <span className="morning-text">MORNING</span>
         </div>
         {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
+        <div className="view-more" onClick={() => navigate("events/CodeRescue")}>
           VIEW MORE
           <div className="view-more-icon"></div>
         </div>
@@ -94,7 +91,7 @@ const EventLineup = () => {
           <span className="morning-text">MORNING</span>
         </div>
         {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
+        <div className="view-more" onClick={() => navigate("events/WebWhiz")}>
           VIEW MORE
           <div className="view-more-icon"></div>
         </div>
@@ -114,7 +111,7 @@ const EventLineup = () => {
           <span className="morning-text">AFTERNOON</span>
         </div>
         {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
+        <div className="view-more" onClick={() => navigate("events/FunFinity-Wars")}>
           VIEW MORE
           <div className="view-more-icon"></div>
         </div>
@@ -134,7 +131,7 @@ const EventLineup = () => {
           <span className="morning-text">AFTERNOON</span>
         </div>
         {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
+        <div className="view-more" onClick={() => navigate("events/SharK-Tank")}>
           VIEW MORE
           <div className="view-more-icon"></div>
         </div>
@@ -155,7 +152,7 @@ const EventLineup = () => {
           <span className="morning-text">AFTERNOON</span>
         </div>
         {/* Right Side: "VIEW MORE" button */}
-        <div className="view-more">
+        <div className="view-more" onClick={() => navigate("events/Cinematica")}>
           VIEW MORE
           <div className="view-more-icon"></div>
         </div>

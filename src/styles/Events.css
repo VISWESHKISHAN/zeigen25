@@ -152,8 +152,9 @@
   } */
 
   .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     justify-content: center;
     max-width: 900px;
@@ -201,12 +202,12 @@
   } */
 
   .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid for responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     justify-content: center;
     max-width: 900px;
-    margin-left: 55px;
   }
 
   .event-name-card {
