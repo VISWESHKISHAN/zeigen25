@@ -34,7 +34,7 @@ export default function PaperPresentation(){
                                     <li>Future of Ai</li>
                                     <li>The rise of 5G and it's impact on society</li>
                                     <li>Metaverse</li>
-                                    <li>Digital twin technliogy</li>
+                                    <li>Digital twin technology</li>
                                     <li>Ethical Hacking</li>
                                     <li>RFID Technology</li>
                                 </ol>

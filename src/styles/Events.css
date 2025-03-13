@@ -206,7 +206,7 @@
     gap: 20px;
     justify-content: center;
     max-width: 900px;
-    margin: auto;
+    margin-left: 55px;
   }
 
   .event-name-card {

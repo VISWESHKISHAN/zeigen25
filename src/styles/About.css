@@ -246,6 +246,10 @@
     gap: 15px;
   }
 
+  .event-date {
+    font-size: 1.5rem;
+  }
+
   .info-box {
     width: 100%;
     font-size: 0.85rem;
@@ -256,7 +260,7 @@
   }
 
   .countdown-item {
-    width: 75px;
+    width: 69px;
     padding: 10px;
   }
 

@@ -86,6 +86,7 @@
 .DevelpedBy p{
     text-align: center;
     color:#DF2DEF;
+    margin-top: 10px;
 }
 
 @media screen and (min-device-width: 481px) and (max-device-width: 640px) { 
