@@ -1,10 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import './Events.css';
 import NonTech1 from '../../img/cm.webp';
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Cinematica() {
-
+    const navigate = useNavigate();
     return (
         <section className='Event-1'>
             <div className="Event-1-Container">

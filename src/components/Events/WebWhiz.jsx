@@ -2,8 +2,9 @@ import './Events.css'
 import Events3 from '../../img/ww.webp'
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 export default function WebWhiz() {
-
+    const navigate = useNavigate();
     return (
         <section className='Event-1'>
             <div className="Event-1-Container">
