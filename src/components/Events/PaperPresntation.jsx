@@ -2,12 +2,15 @@ import './Events.css'
 import Event1 from '../../img/pblitz.webp'
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
-export default function PaperPresentation(){
+export default function PaperPresentation() {
 
-    return(
+    return (
         <section className='Event-1'>
             <div className="Event-1-Container">
                 <div className='Event-Title'>
+                    <button className="back-button" onClick={() => navigate(-1)}>
+                        ←
+                    </button>
                     <h1>EVENTS <span>ZEIGEN'25</span></h1>
                     <p>PRESENTATION BLITZ</p>
                 </div>
@@ -17,10 +20,10 @@ export default function PaperPresentation(){
                             <img src={Event1} alt="PaperPresentation" />
                             <h2>PRESENTATION BLITZ</h2>
                             <div className='Registration-Box'>
-                                <h3>REGISTRATION</h3>   
-                                <p>Registration Fee :<span><BiRupee/></span>250 Per Head</p>
+                                <h3>REGISTRATION</h3>
+                                <p>Registration Fee :<span><BiRupee /></span>250 Per Head</p>
                                 <div className='RegisterBtn'>
-                                    <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong/></a></p>
+                                    <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong /></a></p>
                                 </div>
                             </div>
                         </div>
