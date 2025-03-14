@@ -1,5 +1,5 @@
 import './Events.css'
-import NonTech3 from '../../images/st.png'
+import NonTech3 from '../../img/st.webp'
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 export default function SharkTank(){

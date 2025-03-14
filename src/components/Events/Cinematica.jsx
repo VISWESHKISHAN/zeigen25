@@ -1,5 +1,5 @@
 import './Events.css';
-import NonTech1 from '../../images/cm.png';
+import NonTech1 from '../../img/cm.webp';
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 

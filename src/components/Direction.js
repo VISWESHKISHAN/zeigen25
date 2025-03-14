@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Direction.css"; // Import CSS
-import mapImage from "../images/map.png"
+import mapImage from "../img/map.webp"
 
 const Direction = () => {
   const googleMapsUrl = "https://www.google.com/maps?q=9.836167,78.163222";

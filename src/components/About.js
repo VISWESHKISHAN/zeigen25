@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styles/About.css";
-import brochureImage from "../images/brochure.png";
+import brochureImage from "../img/brochure.webp";
 // import GlitchText from './GlitchText';
 import Counter from "./Counter";
 import SpotlightCard from './SpotlightCard';

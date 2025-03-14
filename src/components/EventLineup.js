@@ -1,13 +1,13 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/EventLineup.css"; // Import CSS file
-import pblitz1 from "../images/pblitz1.png"; // Import image
-import ww from "../images/ww.png";
-import cr from "../images/cr.png";
-import cm from "../images/cm.png";
-import fw from "../images/fw.png";
-import st from "../images/st.png";
-import ts1 from "../images/ts1.png";
+import pblitz1 from "../img/pblitz1.webp"; // Import image
+import ww from "../img/ww.webp";
+import cr from "../img/cr.webp";
+import cm from "../img/cm.webp";
+import fw from "../img/fw.webp";
+import st from "../img/st.webp";
+import ts1 from "../img/ts1.webp";
 
 const EventLineup = () => {
   const navigate = useNavigate();

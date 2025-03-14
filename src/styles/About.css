@@ -260,7 +260,7 @@
   }
 
   .countdown-item {
-    width: 67px;
+    width: 63px;
     padding: 10px;
   }
 
@@ -269,6 +269,6 @@
   }
 
   .countdown-item p {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }

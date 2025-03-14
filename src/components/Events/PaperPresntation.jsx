@@ -1,5 +1,5 @@
 import './Events.css'
-import Event1 from '../../images/pblitz.png'
+import Event1 from '../../img/pblitz.webp'
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 export default function PaperPresentation(){

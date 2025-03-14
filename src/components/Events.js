@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "../styles/Events.css";
 import TiltedCard from "./TiltedCard";
 import TrueFocus from "./TrueFocus";
-import pblitz from "../images/pblitz.png";
-import ww from "../images/ww.png";
-import cr from "../images/cr.png";
-import cm from "../images/cm.png";
-import fw from "../images/fw.png";
-import st from "../images/st.png";
-import ts from "../images/ts.png";
+import pblitz from "../img/pblitz1.webp"; // Import image
+import ww from "../img/ww.webp";
+import cr from "../img/cr.webp";
+import cm from "../img/cm.webp";
+import fw from "../img/fw.webp";
+import st from "../img/st.webp";
+import ts from "../img/ts1.webp";
+
 
 const technicalEvents = [
   { name: "Presentation Blitz", image: pblitz, path: "/events/Presentation-BlitZ" },
@@ -66,10 +67,10 @@ const Events = () => {
                 <TrueFocus 
                   sentence={event.name}
                   manualMode={false}
-                  blurAmount={5}
+                  blurAmount={2}
                   borderColor="pink"
-                  animationDuration={1}
-                  pauseBetweenAnimations={1}
+                  animationDuration={0.5}
+                  pauseBetweenAnimations={0.5}
                 />
               </p>
             }

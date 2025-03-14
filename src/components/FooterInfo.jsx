@@ -1,5 +1,5 @@
 import '../styles/FooterInfo.css'
-import Logo from '../images/zeigen.png'
+import Logo from '../img/zeigen.webp'
 export default function FooterInfo(){
     return (
         <section>
@@ -35,11 +35,12 @@ export default function FooterInfo(){
                             <p className='name' >CO-ORDINATORS</p>
                             <ul>
                                 <li> 
-                                    <p className='Co-ordinators-Name' >Mr.Thiravidan PM</p>
+                                    <p className='Co-ordinators-Name' >Mr. Thiravidan.P.M</p>
                                     <p className='Co-ordinators-Number'>9123563645</p>
                                 </li>
+                                <br/>
                                 <li> 
-                                    <p className='Co-ordinators-Name'>Mr.Murugesh S</p>
+                                    <p className='Co-ordinators-Name'>Mr. Murugesh.S</p>
                                     <p className='Co-ordinators-Number'>9345634014</p>
                                 </li>
                             </ul>

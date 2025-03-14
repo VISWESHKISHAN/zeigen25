@@ -1,5 +1,5 @@
 import './Events.css'
-import Events3 from '../../images/ww.png'
+import Events3 from '../../img/ww.webp'
 import { BiRupee } from "react-icons/bi";
 import { FaArrowRightLong } from "react-icons/fa6";
 export default function WebWhiz(){
