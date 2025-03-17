@@ -33,10 +33,10 @@ export default function FunFinity() {
                             <h2>EVENT OVERVIEW</h2>
                             <p>Gear up for a thrilling event packed with fun challenges that <br /> test your teamwork,agility,and creativity! Enjoy Exciting <br /> activites,laugh,compete,and unleash your competitive <br /> sprite in an unforgettable experience full of energy and <br /> enthusiam</p>
                             <div className='Rounds'>
-                                <h2>Round 1</h2>
+                                <h2>Round 1:</h2>
                                 <h4>PAATHA ORU LOOK LA!</h4>
                                 <p>observe the images on screen and write down as many words as <br /> possible in one minute - the team with the most words wins! </p>
-                                <h2>Round 2</h2>
+                                <h2>Round 2:</h2>
                                 <h4>GALLATA GROUND</h4>
                                 <p>It is a Multi-Level Challenge featuring3-4 stages of exciting physical <br /> activities and fun tasks for an action-packed exprience</p>
                                 <h2>Round 3:</h2>

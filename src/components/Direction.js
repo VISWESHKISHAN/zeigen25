@@ -11,7 +11,7 @@ const Direction = () => {
           GET DIRECTION TO <span className="highlight">KLNCE</span>
         </h2>
         <p className="direction-text">
-          KLN College of Engineering is one of the premier institutions in Tamil Nadu, 
+          K.L.N. College of Engineering is one of the premier institutions in Tamil Nadu, 
           known for its excellence in technical education and innovation. Easily accessible 
           from Madurai, the campus offers state-of-the-art facilities in a serene environment.
         </p>
