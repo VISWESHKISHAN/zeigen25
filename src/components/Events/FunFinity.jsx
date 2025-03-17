@@ -31,17 +31,17 @@ export default function FunFinity() {
                         </div>
                         <div className='Container-2'>
                             <h2>EVENT OVERVIEW</h2>
-                            <p>Gear up for a thrilling event packed with fun challenges that <br /> test your teamwork,agility,and creativity! Enjoy Exciting <br /> activites,laugh,compete,and unleash your competitive <br /> sprite in an unforgettable experience full of energy and <br /> enthusiam</p>
+                            <p>Gear up for a thrilling event packed with fun challenges that <br /> test your teamwork, ability and creativity! Enjoy Exciting <br /> activities, laugh, compete and unleash your competitive <br /> spirit in an unforgettable experience full of energy and <br /> enthusiasm.</p>
                             <div className='Rounds'>
                                 <h2>Round 1:</h2>
                                 <h4>PAATHA ORU LOOK LA!</h4>
-                                <p>observe the images on screen and write down as many words as <br /> possible in one minute - the team with the most words wins! </p>
+                                <p>Observe the images on screen and write down as many words as <br /> possible in one minute - the team with the most words wins! </p>
                                 <h2>Round 2:</h2>
                                 <h4>GALLATA GROUND</h4>
-                                <p>It is a Multi-Level Challenge featuring3-4 stages of exciting physical <br /> activities and fun tasks for an action-packed exprience</p>
+                                <p>It is a Multi-Level Challenge featuring 3-4 stages of exciting physical <br /> activities and fun tasks for an action-packed experience.</p>
                                 <h2>Round 3:</h2>
                                 <h4>THADAI ADHAI UDAI!</h4>
-                                <p>In this XO challenge ,each turn comes with unique hindrance,manking <br />strategic play even more difficult</p>
+                                <p>In this XO challenge, each turn comes with unique hindrance, making <br />strategic play even more difficult.</p>
                             </div>
                             <div className='More-Details'>
                                 <h2>FOR MORE DETAILS</h2>

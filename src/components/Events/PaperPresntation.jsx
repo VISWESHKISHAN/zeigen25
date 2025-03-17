@@ -30,13 +30,13 @@ export default function PaperPresentation() {
                         </div>
                         <div className='Container-2'>
                             <h2>EVENT OVERVIEW</h2>
-                            <p>Technology,like art,is a soaring exercise of the Human <br /> Imagination</p>
+                            <p>Technology is like art, It is a soaring exercise of human <br /> Imagination</p>
                             <div className='Topics'>
                                 <h2>TOPICS</h2>
                                 <ol>
                                     <li>Block chain and Cryptography</li>
-                                    <li>Future of Ai</li>
-                                    <li>The rise of 5G and it's impact on society</li>
+                                    <li>Future of AI</li>
+                                    <li>The Rise of 5G and it's impact on society</li>
                                     <li>Metaverse</li>
                                     <li>Digital twin technology</li>
                                     <li>Ethical Hacking</li>

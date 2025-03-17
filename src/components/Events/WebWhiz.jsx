@@ -30,14 +30,14 @@ export default function WebWhiz() {
                         </div>
                         <div className='Container-2'>
                             <h2>EVENT OVERVIEW</h2>
-                            <p> Web site designing-Students can design a website <br /> consisting of web pages by using Anykind of internet <br /> resources</p>
+                            <p> Website Designing-Students can design a website <br /> consisting of multiple web pages using any internet  <br /> resources</p>
                             <div className='Notices'>
                                 <h2>IMPORTANT NOTICE</h2>
-                                <p>Website topic for a team will be given onspot.</p>
+                                <p>Website topic for a team will be given <b>on the spot</b>.</p>
                             </div>
                             <div className='Tools'>
                                 <h2>TOOLS</h2>
-                                <p>Web page can be created in HTML,VS code or <br /> any kinds of other web applications.
+                                <p>Web page can be created using HTML,VS code or <br /> any other web development applications.
                                 </p>
                             </div>
                             <div className='Team-size'>

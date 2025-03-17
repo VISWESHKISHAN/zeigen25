@@ -31,11 +31,11 @@ export default function Cinematica() {
                         </div>
                         <div className='Container-2'>
                             <h2>EVENT OVERVIEW</h2>
-                            <p>Get ready for a cinematic journey that's all about the magic <br />of movies and the music that makes them unforgettable! <br />Four exciting rounds await, testing your knowledge of iconic <br />films and their soundtracks! <br />From blockbuster hits to cult classics, <br />it's a celebration of the silver screen.
+                            <p>Get ready for a cinematic journey celebrating the magic <br />of movies and the music that makes them unforgettable! <br />Four exciting rounds await, testing your knowledge of iconic <br />films and their soundtracks. From blockbuster hits to cult <br />classics, it's a celebration of the silver screen.
                             </p>
                             <div className='Cinematic-Quotes'>
                                 <p>So, are you ready to reel in the fun?</p>
-                                <p>Let the cinematic adventure begin!"</p>
+                                <p>Let the cinematic adventure begin!🎬✨"</p>
                             </div>
                             <div className='Team-size'>
                                 <h2>TEAM SIZE</h2>

@@ -59,10 +59,10 @@ About Zeigen' 25
       <p className="about-description">
         <span className="highlight">ZEIGEN</span> is a technical symposium aimed at fostering innovation, 
         collaboration, and technical excellence. It features a range of events, including technical competitions, 
-        workshops, paper presentations, and interactive sessions with industry experts. The 
+        workshops, paper presentations and interactive sessions with industry experts.
         <span className="highlight"> ZEIGEN</span> provides a platform for students to showcase their skills, 
-        network with professionals, and gain hands-on experience in emerging technologies. ZEIGEN is a 
-        celebration of knowledge, creativity, and teamwork, bridging the gap between academia and industry.
+        network with professionals and gain hands-on experience in emerging technologies. ZEIGEN is a 
+        celebration of knowledge, creativity, teamwork and it bridges the gap between academia and industry.
       </p>
       <button className="brochure-button" onClick={toggleBrochure}>
         {showBrochure ? "CLOSE BROCHURE" : "VIEW BROCHURE"}

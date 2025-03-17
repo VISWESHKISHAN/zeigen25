@@ -30,11 +30,11 @@ export default function CodeRescue() {
                         </div>
                         <div className='Container-2'>
                             <h2>EVENT OVERVIEW</h2>
-                            <p>Step into the ultimate coding battleground, where logic <br />eets speed and precision. Sharpen your mind, tackle <br />challenges, and prove your debugging mastery. </p>
+                            <p>Step into the ultimate coding battleground, where logic <br />meets speed and precision. Sharpen your mind, tackle <br />challenges and prove your debugging mastery. </p>
                             <div className='Logic-Code'>
                                 <ul>
-                                    <li> Think fast</li>
-                                    <li>code smart</li>
+                                    <li>Think fast</li>
+                                    <li>Code smart</li>
                                     <li>Debug like a pro</li>
                                 </ul>
                             </div>
@@ -44,7 +44,7 @@ export default function CodeRescue() {
                                 <h2>Round 2:</h2>
                                 <p>Write a flawless program based on given concepts.</p>
                                 <h2>Round 3:</h2>
-                                <p>Debug the broken code and save the day</p>
+                                <p>Debug the broken code and save the day!</p>
                             </div>
                             <div className='Team-size'>
                                 <h2>TEAM SIZE</h2>

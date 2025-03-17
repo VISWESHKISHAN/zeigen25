@@ -30,10 +30,10 @@ export default function SharkTank() {
                         </div>
                         <div className='Container-2'>
                             <h2>EVENT OVERVIEW</h2>
-                            <p>Shark Tank is an exciting pitch competition where aspiring <br /> enterpreneurs present their innovative ideas(new product or <br /> startup pitch)  to a panel of 'sharks'(judges) industry experts <br /> and judges participants must convience the sharks of their <br /> creativity,strategy,and negotiation </p>
+                            <p>Shark Tank is an exciting pitch competition where aspiring <br /> entrepreneurs present their innovative ideas(new product or <br /> startup pitch)  to a panel of 'sharks'(industry experts <br/>and judges).Participants must convince the sharks of their <br /> creativity, strategy and negotiation skills</p>
                             <div className='Shark-Tank-Rounds'>
                                 <h2>Round 1</h2>
-                                <h4>THE ELEVATION PITCH(SCREENING ROUND)</h4>
+                                <h4>THE ELEVATOR PITCH(SCREENING ROUND)</h4>
                                 <ul>
                                     <li>Time limit:90 seconds - 2 Minutes per team</li>
                                 </ul>
