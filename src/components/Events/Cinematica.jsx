@@ -37,6 +37,20 @@ export default function Cinematica() {
                                 <p>So, are you ready to reel in the fun?</p>
                                 <p>Let the cinematic adventure begin!🎬✨"</p>
                             </div>
+                            <div className='Rounds'>
+                                <h2>Round 1:</h2>
+                                <h4>Balloon-a Oodhu , Bathila Sollu!</h4>
+                                <p>Who rules the world of cinema? Prove you're the Cine Raja or Rani! <br />This round brings dialogues, scenes, and songs under one roof. <br />Only the true king or queen of films will rise above the rest!</p>
+                                <h2>Round 2:</h2>
+                                <h4>BGM-a Kelu, Title-a Thedu!</h4>
+                                <p> It's the ultimate Title Track Chase! Listen to the BGM, grab the right <br />movie card, and dash to victory. The clock is ticking, <br />and only the quickest team will take the spotlight. Ready… set… groove!</p>
+                                <h2>Round 3:</h2>
+                                <h4>Solli Adi</h4>
+                                <p>Get ready for a battle of quick thinking and movie knowledge in Solli Adi! <br />This exciting round tests how well you can recall movies, <br />songs, or other film-related facts under pressure.</p>
+                                <h2>Round 4:</h2>
+                                <h4>Match Ka Batch</h4>
+                                <p>Get ready to put your movie knowledge to the test in Match Ka Batch! <br />This fun-filled non-tech event challenges participants to guess <br />the movie based on a series of clues</p>
+                            </div>
                             <div className='Team-size'>
                                 <h2>TEAM SIZE</h2>
                                 <p>2 Members per Team</p>

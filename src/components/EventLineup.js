@@ -144,7 +144,7 @@ const EventLineup = () => {
           style={{ backgroundImage: `url(${cm})` }}
         ></div>
         {/* Event Name (centered height-wise) */}
-        <div className="event-name">Cinimatica</div>
+        <div className="event-name">Cinematica</div>
 
         {/* Middle: Small icon + "MORNING" text */}
         <div className="event-time">
