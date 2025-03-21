@@ -24,7 +24,7 @@ export default function WebWhiz() {
                                 <h3>REGISTRATION</h3>
                                 <p>Registration Fee :<span><BiRupee /></span>250 Per Head</p>
                                 <div className='RegisterBtn'>
-                                    <p><a href="https://forms.gle/mrUbzaNAQDudphBy5" target="_blank">Register Now <FaArrowRightLong /></a></p>
+                                    <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScb9LvYpjYncZKPCZNnXMZ76uoThlQlaFhu-skCXWktAixqLw/viewform" target="_blank">Register Now <FaArrowRightLong /></a></p>
                                 </div>
                             </div>
                         </div>
