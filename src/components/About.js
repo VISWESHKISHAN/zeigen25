@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../styles/About.css";
-import brochureImage from "../img/brochure.webp";
-// import GlitchText from './GlitchText';
 import Counter from "./Counter";
 import SpotlightCard from './SpotlightCard';
-
+import InfiniteSlider from "../components/InfiniteSlider"; // Import the slider component
 const About = () => {
-  const [showBrochure, setShowBrochure] = useState(false);
-
-  const toggleBrochure = () => {
-    setShowBrochure(!showBrochure);
-  };
-
-  const closeBrochure = () => {
-    setShowBrochure(false);
-  };
 
   const eventDate = new Date("April 2, 2025 00:00:00").getTime(); // Update as needed
 
@@ -64,20 +53,14 @@ About Zeigen' 25
         network with professionals and gain hands-on experience in emerging technologies. ZEIGEN is a 
         celebration of knowledge, creativity, teamwork and it bridges the gap between academia and industry.
       </p>
-      <button className="brochure-button" onClick={toggleBrochure}>
-        {showBrochure ? "CLOSE BROCHURE" : "VIEW BROCHURE"}
-      </button>
-
-      <div className={`brochure-overlay ${showBrochure ? "show" : ""}`} onClick={closeBrochure}></div>
-      <div className={`brochure-container ${showBrochure ? "show" : ""}`} onClick={toggleBrochure}>
-        <img src={brochureImage} alt="Brochure" className="brochure-image" />
-      </div>
-
-
+<InfiniteSlider /> {/* Call the InfiniteSlider component here */}
       <div className="event-info">
         <div className="info-box"><SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
         PARTICIPANT CERTIFICATION WILL BE PROVIDED
-</SpotlightCard></div>
+    </SpotlightCard></div>
+    <div className="info-box"><SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+            WINNERS TAKES INTERNSHIP OPPORTUNITY
+    </SpotlightCard></div>
         <div className="info-box"><SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
         LUNCH AND REFRESHMENT WILL BE PROVIDED
 </SpotlightCard></div>

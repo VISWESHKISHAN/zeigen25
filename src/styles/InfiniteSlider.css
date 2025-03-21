@@ -1,0 +1,65 @@
+.slider-container {
+  overflow: hidden;
+  width: 100vw; /* Full width */
+  height: 700px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.slider {
+  display: flex;
+  gap: 20px; /* Adjust spacing */
+  align-items: center;
+  white-space: nowrap;
+  width: max-content; /* Ensure all images fit in one row */
+}
+
+.slider-img {
+  height: auto;
+  max-height: 680px; /* Adjust height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  user-select: none; /* Prevent selection */
+  pointer-events: none; /* Prevent interaction issues */
+}
+/* ✅ Tablets (Portrait) - 481px to 768px */
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .slider-container {
+    height: 500px; /* Adjust for tablets */
+  }
+
+  .slider-img {
+    max-height: 480px; /* Reduce image height */
+  }
+}
+
+/* ✅ Tablets (Landscape) - 768px to 1024px */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .slider-container {
+    height: 600px; /* Slightly smaller than desktop */
+  }
+
+  .slider-img {
+    max-height: 580px; /* Maintain aspect ratio */
+  }
+}
+
+/* ✅ Mobile (max 480px) */
+@media only screen and (max-width: 480px) {
+  .slider-container {
+    height: 350px; /* Adjust for smaller screens */
+  }
+
+  .slider-img {
+    max-height: 320px; /* Reduce image size for mobiles */
+  }
+
+  .slider {
+    gap: 10px; /* Reduce gap for better fit */
+  }
+}
