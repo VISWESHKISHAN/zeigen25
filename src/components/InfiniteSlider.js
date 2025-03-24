@@ -59,7 +59,7 @@ const InfiniteSlider = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {[...images, ...images].map(({ src, link }, index) => (
+        {[...images, ...images, ...images, ...images, ...images].map(({ src, link }, index) => (
           <motion.img
             key={index}
             src={src}
